@@ -58,6 +58,7 @@ function addBlog(event) {
     let react = document.getElementById('react').checked;
     let vue = document.getElementById('vue').checked;
 
+    let result = description.slice(0, 135) + "....";
     let cardDuration = abtDuration(sDate, eDate);
 
     image = URL.createObjectURL(image[0]);
@@ -70,7 +71,8 @@ function addBlog(event) {
         js : js,
         react : react,
         vue : vue,
-        duration : cardDuration
+        duration : cardDuration,
+        result : result
     };
 
     blogs.push(blog);
@@ -97,7 +99,7 @@ function renderBlog() {
                     </a>
                     <p>Technology</p>
                     <span>Duration: ${blogs[i].duration}</span>
-                    <p>${blogs[i].description}</p>
+                    <p>${blogs[i].result}</p>
                 </div>
                 <div class="card-footer">
                     <div class="card-icon">
