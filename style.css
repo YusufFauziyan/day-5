@@ -463,3 +463,11 @@ input[type="file"] {
     text-align: justify;
 }
 
+/* CHECKBOX */
+.card-icon .true {
+    display: inline-block;
+}
+
+.card-icon .false {
+    display: none;
+}

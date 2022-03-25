@@ -58,26 +58,26 @@ function addBlog(event) {
     let react = document.getElementById('react').checked;
     let vue = document.getElementById('vue').checked;
 
-    if(node){
-        node = document.getElementById('node').value
-    } else {
-        node = ''
-    }
-    if(js){
-        js = document.getElementById('js').value
-    } else {
-        js = ''
-    }
-    if(react){
-        react = document.getElementById('react').value
-    } else {
-        react = ''
-    }
-    if(vue){
-        vue = document.getElementById('vue').value
-    } else {
-        vue = ''
-    }
+    // if(node){
+    //     node = document.getElementById('node').value
+    // } else {
+    //     node = ''
+    // }
+    // if(js){
+    //     js = document.getElementById('js').value
+    // } else {
+    //     js = ''
+    // }
+    // if(react){
+    //     react = document.getElementById('react').value
+    // } else {
+    //     react = ''
+    // }
+    // if(vue){
+    //     vue = document.getElementById('vue').value
+    // } else {
+    //     vue = ''
+    // }
     let cardDuration = abtDuration(sDate, eDate);
 
     image = URL.createObjectURL(image[0]);
@@ -121,10 +121,10 @@ function renderBlog() {
                 </div>
                 <div class="card-footer">
                     <div class="card-icon">
-                        <i class='${blogs[i].node}'></i>
-                        <i class='${blogs[i].js}' ></i>
-                        <i class='${blogs[i].react}' ></i>
-                        <i class='${blogs[i].vue}' ></i>
+                        <i class='bx bxl-vuejs ${blogs[i].vue}' ></i>
+                        <i class='bx bxl-react ${blogs[i].react}' ></i>
+                        <i class='bx bxl-nodejs ${blogs[i].node}' ></i>
+                        <i class='bx bxl-javascript ${blogs[i].js}' ></i>
                     </div>
                 </div>
                 <div class="card-button">
@@ -152,5 +152,5 @@ function abtDuration(startDate, endDate) {
     } else {
         return year + ' Tahun'
     }
-    return month;
+
 }
