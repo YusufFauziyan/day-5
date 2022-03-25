@@ -58,26 +58,6 @@ function addBlog(event) {
     let react = document.getElementById('react').checked;
     let vue = document.getElementById('vue').checked;
 
-    // if(node){
-    //     node = document.getElementById('node').value
-    // } else {
-    //     node = ''
-    // }
-    // if(js){
-    //     js = document.getElementById('js').value
-    // } else {
-    //     js = ''
-    // }
-    // if(react){
-    //     react = document.getElementById('react').value
-    // } else {
-    //     react = ''
-    // }
-    // if(vue){
-    //     vue = document.getElementById('vue').value
-    // } else {
-    //     vue = ''
-    // }
     let cardDuration = abtDuration(sDate, eDate);
 
     image = URL.createObjectURL(image[0]);
