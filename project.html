@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project -  task5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- ======== NAV BAR ============= -->
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html" class="nav">Home</a>
+                </li>
+                <li>
+                    <a href="project.html" class="nav active">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- ====== PROJECT ========== -->
+    <div class="container">
+        <div class="contact-form-center">
+            <form onsubmit="addBlog(event)">
+                <h1>ADD MY PROJECT</h1>
+        
+                <div class="div">
+                    <label for="title">Project Name</label>
+                    <input type="text" name="" id="title">
+                </div>
+                
+                <div class="form-date div">
+                    <div>
+                        <label for="sDate">Start Date</label>
+                        <input type="date" name="" id="sDate">
+                    </div>
+            
+                    <div>
+                        <label for="eDate">End Date</label>
+                        <input type="date" name="" id="eDate">
+                    </div>
+                </div>
+        
+                <div class="div">
+                    <label for="description">Description</label>
+                    <textarea name="" id="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="div">
+                    <label for="">Technologies</label>
+                    <div class="form-contact-cb">
+                        <div>
+                            <div>
+                                <input type="checkbox" id="node" value="bx bxl-nodejs">
+                                <label for="node">Node Js</label> 
+                            </div>
+                            <div>
+                                <input type="checkbox" id="js" value="bx bxl-react">
+                                <label for="js">Javascripts</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="checkbox" id="react" value="bx bxl-vuejs">
+                                <label for="react">React Js</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="vue" value="bx bxl-javascript">
+                                <label for="vue">VueJs</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="div">
+                    <label for="">Upload Image</label>
+                    <div>
+                        <label for="file-upload" class="file-upload">
+                            <span>Upload</span>
+                            <i class='bx bx-paperclip'></i>
+                        </label>
+                        <input id="file-upload" type="file"/>
+                    
+                    </div>
+                </div>
+                <button id="submit" >Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- ======CARD===== -->
+    <div class="container-project">
+        <h1>MY PROJECT</h1>
+        <div class="project-list">
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img/project-6.jpg" alt="" class="card-image">
+                </div>
+                <div class="card-body">
+                    <h4>Lord Gaben 2022 </h4>
+                    <a href="project/project1.html">
+                        View More <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <p>Game</p>
+                    <span>Duration: 3 Hours</span>
+                    <p>Lord gaben was give $1000000 to champion TI Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem velit iure repellendus, ipsa dolores sit quia ...</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-icon">
+                        <i class='bx bxl-steam'></i>
+                        <i class='bx bxl-java' ></i>
+                        <i class='bx bxl-apple' ></i>
+                    </div>
+                </div>
+                <div class="card-button">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img/project-2.png" alt="" class="card-image">
+                </div>
+                <div class="card-body">
+                    <h4>What's new in 2022 Tech</h4>
+                    <a href="project/project2.html">
+                        View More <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <p>Technology</p>
+                    <span>Duration: 1 Hours</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!.....</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-icon">
+                        <i class='bx bxl-steam'></i>
+                        <i class='bx bxl-java' ></i>
+                        <i class='bx bxl-apple' ></i>
+                    </div>
+                </div>
+                <div class="card-button">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img/project-3.png" alt="" class="card-image">
+                </div>
+                <div class="card-body">
+                    <h4>What's new in 2022 Tech</h4>
+                    <a href="project/project3.html">
+                        View More <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <p>Technology</p>
+                    <span>Duration: 1 Hours</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!....</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-icon">
+                        <i class='bx bxl-steam'></i>
+                        <i class='bx bxl-java' ></i>
+                        <i class='bx bxl-apple' ></i>
+                    </div>
+                </div>
+                <div class="card-button">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img/project-4.png" alt="" class="card-image">
+                </div>
+                <div class="card-body">
+                    <h4>What's new in 2022 Tech</h4>
+                    <a href="project/project4.html">
+                        View More <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <p>Technology</p>
+                    <span>Duration: 1 Hours</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!....</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-icon">
+                        <i class='bx bxl-steam'></i>
+                        <i class='bx bxl-java' ></i>
+                        <i class='bx bxl-apple' ></i>
+                    </div>
+                </div>
+                <div class="card-button">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img/project-5.png" alt="" class="card-image">
+                </div>
+                <div class="card-body">
+                    <h4>What's new in 2022 Tech</h4>
+                    <a href="project/project5.html">
+                        View More <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <p>Technology</p>
+                    <span>Duration: 1 Hours</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!.....</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-icon">
+                        <i class='bx bxl-steam'></i>
+                        <i class='bx bxl-java' ></i>
+                        <i class='bx bxl-apple' ></i>
+                    </div>
+                </div>
+                <div class="card-button">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+                <div id="demo"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img/project-1.png" alt="" class="card-image">
+                </div>
+                <div class="card-body">
+                    <h4>What's new in 2022 Tech</h4>
+                    <a href="project/project6.html">
+                        View More <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <p>Technology</p>
+                    <span>Duration: 1 Hours</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!.....</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-icon">
+                        <i class='bx bxl-steam'></i>
+                        <i class='bx bxl-java' ></i>
+                        <i class='bx bxl-apple' ></i>
+                    </div>
+                </div>
+                <div class="card-button">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+                <div id="demo"></div>
+            </div>
+
+        </div>
+        <div class="project-list" id="contents"></div>
+    </div>
+</body>
+</html>
